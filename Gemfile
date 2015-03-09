@@ -17,6 +17,7 @@ gem 'rspotify'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem "omniauth-google-oauth2"
+gem 'mandrill_dm'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
