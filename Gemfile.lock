@@ -298,6 +298,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   mandrill_dm
+  omniauth
   omniauth-facebook
   omniauth-google-oauth2
   omniauth-twitter
