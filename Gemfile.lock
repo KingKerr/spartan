@@ -136,6 +136,9 @@ GEM
       rack (~> 1.0)
     omniauth-facebook (2.0.1)
       omniauth-oauth2 (~> 1.2)
+    omniauth-google-oauth2 (0.2.6)
+      omniauth (> 1.0)
+      omniauth-oauth2 (~> 1.1)
     omniauth-oauth (1.0.1)
       oauth
       omniauth (~> 1.0)
@@ -289,6 +292,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   omniauth-facebook
+  omniauth-google-oauth2
   omniauth-twitter
   paperclip (~> 4.2)
   pdfkit
