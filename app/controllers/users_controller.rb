@@ -9,6 +9,9 @@ class UsersController < ApplicationController
     spotify_user = RSpotify::User.new(request.env['omniauth.auth'])
   end
 
+  def friendship
+  end
+
   def edit
   end
 

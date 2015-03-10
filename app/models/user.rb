@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
-  has_many :friends
+  has_many :friendships
   has_many :meals
   has_many :workouts
   validates_format_of :email, :without => TEMP_EMAIL_REGEX, on: :update
