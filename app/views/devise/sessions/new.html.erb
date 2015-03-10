@@ -14,6 +14,6 @@
 <% end %>
 
 
-<%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2) %>
+<a class="btn btn-block btn-social btn-google-plus"><%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2) %></a>
 <%= link_to "Sign in with Spotify", user_omniauth_authorize_path(:spotify) %>
 <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
