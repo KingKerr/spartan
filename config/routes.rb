@@ -8,9 +8,7 @@ Rails.application.routes.draw do
     resources :workouts
   end
 
-  resources :users do
-    resources :friends
-  end
+
 
 
 
