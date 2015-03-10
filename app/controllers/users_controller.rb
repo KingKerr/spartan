@@ -8,6 +8,10 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def create
+    @user = User.create(user_params)
+  end
+
   def update
     respond_to do |format|
       if @user.update(user_params)
@@ -47,6 +51,6 @@ class UsersController < ApplicationController
     end
 
     def user_params
-      params.require(:user).permit(:first_name, :last_name, :email)
+      params.require(:user).permit(:first_name, :last_name, :email, :avatar)
     end
 end

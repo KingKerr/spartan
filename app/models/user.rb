@@ -9,7 +9,8 @@ class User < ActiveRecord::Base
   has_many :meals
   has_many :workouts
   validates_format_of :email, :without => TEMP_EMAIL_REGEX, on: :update
-
+  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
+  validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
   def self.find_for_oauth(auth, signed_in_resource = nil)
 
     identity = Identity.find_for_oauth(auth)
