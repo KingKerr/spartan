@@ -20,6 +20,12 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
   end
 
+  def workout
+  end
+
+  def meal
+  end
+
   def update
     respond_to do |format|
       if @user.update(user_params)
