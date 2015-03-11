@@ -1,15 +1,18 @@
 <div class="jumbotron">
   <nav class="navbar transparent navbar">
-    <div class="container-fluid">
+    <div class="container-text-center">
+      <h1 class="col-md-12">Spartan</h1>
       <div class='navbar-header'>
-        <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-  target='#bs-example-navbar-collapse-1'>
-          <span class='sr-only'></span>
-          <span class='icon-bar'></span>
-          <span class='icon-bar'></span>
-          <span class='icon-bar'></span>
-        </button>
-    <h1>Spartan</h1>
-    </nav>
+
+          <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-  target='#bs-example-navbar-collapse-1'>
+            <span class='sr-only'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+      </div>
+    </div>
+  </nav>
     <h2>Log-In</h2>
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="form-inputs">
