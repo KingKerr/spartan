@@ -2,10 +2,20 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks'}
   resources :users do
     resources :meals
+      member do
+        get 'protein'
+        get 'lower_body'
+      end
+    end
   end
 
   resources :users do
-    resources :workouts
+    resources :workouts do
+      member do
+        get 'upper_body'
+        get 'lower_body'
+      end
+    end
   end
 
 

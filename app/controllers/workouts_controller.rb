@@ -3,19 +3,29 @@ class WorkoutsController < ApplicationController
   def index
     @workouts = Workout.all
     user = current_user
+
+  end
+
+  def new
+    @upper_body_workouts = upper_body
+    @lower_body_workouts = lower_body
+    @cardio_workouts = cardio
+
   end
 
   def upper_body
-    x =["Pull Ups", "Bench Press", "Shrugs", "Shoulder Press", "Upright Rows"]
-
+    @workout = Workout.new
+    @upper_body_options = ["Pull Ups", "Bench Press", "Shrugs", "Shoulder Press", "Upright Rows"]
   end
 
   def lower_body
-    x = ["Squats", "Deadlifts", "Lunges", "Calf Raises", "Reverse Hypers"]
+    @workout = Workout.new
+    @lower_body_options = ["Squats", "Deadlifts", "Lunges", "Calf Raises", "Reverse Hypers"]
   end
 
   def cardio
-    x = ["Sprints", "Walking", "Jog", "Treadmill"]
+    @workout = Workout.new
+    @cardio_options = ["Sprints", "Walking", "Jog", "Treadmill"]
   end
 
   def create

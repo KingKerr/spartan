@@ -5,12 +5,18 @@ class MealsController < ApplicationController
     user = current_user
   end
 
+  def new
+    @protein_meals = protein
+    @sides_meals = sides
+
   def protein
-    x = ["Chicken", "Grass-fed Beef", "Shrimp", "Fish", "Beans", "Pork"]
+    @meal = Meal.new
+    @protein_options = ["Chicken", "Grass-fed Beef", "Shrimp", "Fish", "Beans", "Pork"]
   end
 
   def sides
-    x = ["Brown Rice", "Salad", "Pasta", "Potatoes"]
+    @meal = Meal.new
+    @side_options = ["Brown Rice", "Salad", "Pasta", "Potatoes"]
   end
 
   def create
