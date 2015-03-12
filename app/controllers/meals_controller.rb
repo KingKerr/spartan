@@ -6,9 +6,21 @@ class MealsController < ApplicationController
   end
 
   def protein
+    x = ["Chicken", "Grass-fed Beef", "Shrimp", "Fish", "Beans", "Pork"]
   end
 
   def sides
+    x = ["Brown Rice", "Salad", "Pasta", "Potatoes"]
+  end
+
+  def create
+    @meals = Meal.new(meal_params)
+    if @meal.save
+      redirect_to user_meals_path(current_user.id)
+    else
+      format.html { render :new }
+      format.json { render json: @user.errors, status: :unprocessable_entity}
+    end
   end
 
   def update

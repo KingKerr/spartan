@@ -6,12 +6,26 @@ class WorkoutsController < ApplicationController
   end
 
   def upper_body
+    x =["Pull Ups", "Bench Press", "Shrugs", "Shoulder Press", "Upright Rows"]
+
   end
 
   def lower_body
+    x = ["Squats", "Deadlifts", "Lunges", "Calf Raises", "Reverse Hypers"]
   end
 
   def cardio
+    x = ["Sprints", "Walking", "Jog", "Treadmill"]
+  end
+
+  def create
+    @workouts = Workout.new(workout_params)
+    if @workout.save
+      redirect_to user_workouts_path(current_user.id)
+    else
+      format.html { render :new }
+      format.json { render json: @user.errors, status: :unprocessable_entity}
+    end
   end
 
   def update
