@@ -16,6 +16,8 @@ class UsersController < ApplicationController
   def friendship
   end
 
+
+
   def edit
   end
 
