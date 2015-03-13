@@ -7,24 +7,9 @@ class WorkoutsController < ApplicationController
   end
 
   def new
-    @upper_body_workouts = upper_body
-    @lower_body_workouts = lower_body
-    @cardio_workouts = cardio
-
-  end
-
-  def upper_body
     @workout = Workout.new
     @upper_body_options = ["Pull Ups", "Bench Press", "Shrugs", "Shoulder Press", "Upright Rows"]
-  end
-
-  def lower_body
-    @workout = Workout.new
     @lower_body_options = ["Squats", "Deadlifts", "Lunges", "Calf Raises", "Reverse Hypers"]
-  end
-
-  def cardio
-    @workout = Workout.new
     @cardio_options = ["Sprints", "Walking", "Jog", "Treadmill"]
   end
 
@@ -61,11 +46,11 @@ class WorkoutsController < ApplicationController
   private
 
   def set_workout
-    @user = User.find(params[:id])
+   @user = User.find(params[:id])
   end
 
   def workout_params
-    params.require(:workout).permit(:type, :name)
+    params.require(:workout).permit(:cardio, :upper_body, :lower_body)
   end
 
 

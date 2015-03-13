@@ -1,0 +1,18 @@
+<h1>Meals</h1>
+<% simple_form_for([current_user, @meal] ) do |f| %>
+  <%= f.select :name, @protein_options %>
+
+  <% hidden_field :type, "protein" %>
+
+  <% f.submit %>
+
+<% end %>
+
+<% simple_form_for([current_user, @meal] ) do |f| %>
+  <%= f.select :name, @side_options %>
+
+  <% hidden_field :type, "side" %>
+
+  <% f.submit %>
+
+<% end %

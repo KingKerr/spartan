@@ -1,21 +1,14 @@
 class MealsController < ApplicationController
 
+
   def index
     @meals = Meal.all
     user = current_user
   end
 
   def new
-    @protein_meals = protein
-    @sides_meals = sides
-
-  def protein
     @meal = Meal.new
     @protein_options = ["Chicken", "Grass-fed Beef", "Shrimp", "Fish", "Beans", "Pork"]
-  end
-
-  def sides
-    @meal = Meal.new
     @side_options = ["Brown Rice", "Salad", "Pasta", "Potatoes"]
   end
 
@@ -56,7 +49,7 @@ class MealsController < ApplicationController
   end
 
   def meal_params
-    params.require(:meal).permit(:type, :name)
+    params.require(:meal).permit(:protein, :sides)
   end
 
 end

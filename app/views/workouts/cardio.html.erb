@@ -1,8 +1,0 @@
-<% simple_form_for([current_user, @workout] ) do %>
-  <%= f.select :name, @cardio_options %>
-
-  <% hidden_field :type, "cardio" %>
-
-  <% f.submit %>
-
-<% end %>

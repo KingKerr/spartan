@@ -1,26 +1,27 @@
 Rails.application.routes.draw do
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks'}
   resources :users do
-    resources :meals
-      member do
-        get 'protein'
-        get 'lower_body'
+    resources :meals do
+     # member do
+        #get 'protein'
+        #get 'lower_body'
       end
     end
-  end
 
   resources :users do
     resources :workouts do
-      member do
-        get 'upper_body'
-        get 'lower_body'
-      end
+        #get 'upper_body'
+        #get 'lower_body'
     end
   end
 
 
-
-
+# get 'new'
+# post 'create'
+# get 'edit'
+# post 'update'
+# get 'index'
+# post 'destory'
 
   root 'users#index'
   # The priority is based upon order of creation: first created -> highest priority.
