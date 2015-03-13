@@ -2,7 +2,7 @@
   <h1>Workouts</h1>
 </nav>
 <div class="col-md-3">
-  <h3>Cardio</h3>
+  <h2>Cardio</h2>
     <% simple_form_for([current_user, @workout] ) do |f| %>
     <%= f.select :name, @cardio_options %>
     <% hidden_field :type, "cardio" %>
@@ -10,7 +10,7 @@
     <% end %>
 </div>
 <div class="col-md-3">
-  <h3>Upper Body</h3>
+  <h2>Upper Body</h2>
   <% simple_form_for([current_user, @workout] ) do |f| %>
   <%= f.select :name, @upper_body_options %>
   <% hidden_field :type, "upper_body" %>
@@ -18,7 +18,7 @@
   <% end %>
 </div>
 <div class="col-md-3">
-  <h3>Lower Body</h3>
+  <h2>Lower Body</h2>
   <% simple_form_for([current_user, @workout] ) do |f| %>
   <%= f.select :name, @lower_body_options %>
   <% hidden_field :type, "lower_body" %>
