@@ -62,7 +62,23 @@ body {
       padding: 10px 12px;
       pointer-events: none;
 }
+/* Styling to Feature content area
+-----------------------------------*/
+.feature .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
 
+.feature h2 {
+  font-weight: normal;
+}
+
+.feature .col -lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+/* Responsive CSS
+--------------------- */
 
 @media (min-width: 760px) {
     .navbar-wrapper {
