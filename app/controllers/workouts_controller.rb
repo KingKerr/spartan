@@ -10,7 +10,7 @@ class WorkoutsController < ApplicationController
     @workout = Workout.new
     @upper_body_options = ["Pull Ups", "Bench Press", "Shrugs", "Shoulder Press", "Upright Rows"]
     @lower_body_options = ["Squats", "Deadlifts", "Lunges", "Calf Raises", "Reverse Hypers"]
-    @cardio_options = ["Sprints", "Walking", "Jog", "Treadmill"]
+    @cardio_options = ["Sprints", "Walking", "Jog", "Treadmill", "Bike Ride"]
   end
 
   def create

@@ -20,10 +20,10 @@
               </div>
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#"></a></li>
-                <li><a href="#workouts"><h3><%= link_to "Workouts", user_workouts_path(current_user.id, @workouts) %></h3></a></li>
-                <li><a href="#meals"><h3><%= link_to "Meals", user_meals_path(current_user.id, @meals) %></h3></a></li>
-                <li><a href="#playlist"><h3>Playlist</h3></a></li>
-                <li><a href="signout"><h3><%= link_to '', destroy_user_session_path, method: :delete, class: "fa fa-sign-out" %></h3></a></li>
+                <li><a href="#workouts"><%= link_to "", user_workouts_path(current_user.id, @workouts), class: "fa fa-bicycle fa-2x" %></a></li>
+                <li><a href="#meals"><%= link_to "", user_meals_path(current_user.id, @meals), class: "fa fa-cutlery fa-2x" %></a></li>
+                <li><a href="#playlist"><%= link_to '', users_path(current_user.id), class: "fa fa-headphones fa-2x" %></a></li>
+                <li><a href="signout"><%= link_to '', destroy_user_session_path, method: :delete, class: "fa fa-sign-out fa-2x" %></a></li>
               </ul>
             </div>
           </div>
@@ -96,7 +96,7 @@
           <p><a class="btn btn-default" href="#" role="button">Plan your next meal &raquo;</a></p>
         </div>
          <div class="col-lg-4">
-          <img class="img-circle" src="" alt="fitness image" style="width: 140px; height: 140px;"/>
+          <i class="fa fa-users fa-5x"></i>
           <h2>Social</h2>
           <p>Write something about social component.</p>
           <p><a class="btn btn-default" href="#" role="button">Friends &raquo;</a></p>
