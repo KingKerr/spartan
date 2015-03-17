@@ -20,8 +20,8 @@
               </div>
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#"></a></li>
-                <li><a href="#workouts"><h3><%= link_to "Workouts", user_workouts_path(@current_user.id,@workouts) %></h3></a></li>
-                <li><a href="#meals"><h3><%= link_to "Meals", user_meals_path(@current_user.id, @meals) %></h3></a></li>
+                <li><a href="#workouts"><h3><%= link_to "Workouts", user_workouts_path(current_user.id, @workouts) %></h3></a></li>
+                <li><a href="#meals"><h3><%= link_to "Meals", user_meals_path(current_user.id, @meals) %></h3></a></li>
                 <li><a href="#playlist"><h3>Playlist</h3></a></li>
                 <li><a href="signout"><h3><%= link_to "Sign-Out", destroy_user_session_path, method: :delete %></h3></a></li>
               </ul>
