@@ -2,7 +2,7 @@ class WorkoutsController < ApplicationController
 
   def index
     @workouts = Workout.all
-    user = current_user
+    user_id = current_user.id
 
   end
 
@@ -46,7 +46,7 @@ class WorkoutsController < ApplicationController
   private
 
   def set_workout
-   @user = User.find(params[:id])
+   @workout = Workout.find(params[:id])
   end
 
   def workout_params

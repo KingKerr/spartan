@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy, :finish_signup]
 
   def index
-    @users = User.all
+    user_id = current_user.id
   end
 
   def spotify

@@ -3,7 +3,7 @@ class MealsController < ApplicationController
 
   def index
     @meals = Meal.all
-    user = current_user
+    user_id = current_user.id
   end
 
   def new
@@ -45,7 +45,7 @@ class MealsController < ApplicationController
   private
 
   def set_meal
-    @meal = User.find(params[:id])
+    @meal = Meal.find(params[:id])
   end
 
   def meal_params
