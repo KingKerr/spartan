@@ -15,15 +15,15 @@
             </div>
             <div class="navbar-collapse collapse">
               <div class="right-inner-addon pull-right">
-                <i class="fa fa-search"></i>
-                <input type="search" class="form-control" placeholder="Spartan"/>
+                  <i class="fa fa-search"></i>
+                <input type="search" class="form-control" placeholder="Spartan" />
               </div>
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#"></a></li>
                 <li><a href="#workouts"><h3><%= link_to "Workouts", user_workouts_path(current_user.id, @workouts) %></h3></a></li>
                 <li><a href="#meals"><h3><%= link_to "Meals", user_meals_path(current_user.id, @meals) %></h3></a></li>
                 <li><a href="#playlist"><h3>Playlist</h3></a></li>
-                <li><a href="signout"><h3><%= link_to "Sign-Out", destroy_user_session_path, method: :delete %></h3></a></li>
+                <li><a href="signout"><h3><%= link_to '', destroy_user_session_path, method: :delete, class: "fa fa-sign-out" %></h3></a></li>
               </ul>
             </div>
           </div>
@@ -74,8 +74,8 @@
       </div>
     </div>
   </div>
-    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-  <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev"><span class="fa fa-chevron-left"></span></a>
+  <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next"><span class="fa fa-chevron-right"></span></a>
 
 
 
