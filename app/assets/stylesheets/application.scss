@@ -6,7 +6,11 @@ h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   text-align: center;
-  color: #F8F8F8;
+  color: #000;
+}
+
+.registration_header {
+  background-color: #F8F8F8;
 }
 
 h2 {
@@ -43,4 +47,13 @@ h3 {
 
 .login {
   background-color: #222326;
+}
+
+i.fa.fa-shield.fa-5x {
+  display: inline-block;
+  color: #FAEC83;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto
+
 }
