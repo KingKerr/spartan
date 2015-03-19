@@ -1,2 +1,45 @@
-<h1>Landing#index</h1>
-<p>Find me in app/views/landing/index.html.erb</p>
+<h1>Welcome to Spartan</h1>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag"Snatch.png", alt: "Snatch" %>
+      <div class="carousel-caption">
+          <h3>Fitness</h3>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "Nutrition.png", alt: "Nutrition" %>
+      <div class="carousel-caption">
+          <h3>Nutrition</h3>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "Music.png", alt: "Music" %>
+      <div class="carousel-caption">
+          <h3>Music</h3>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "Mitts.png", alt:"Exhausted" %>
+      <div class="carousel-caption">
+          <h3>Social</h3>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "Exhausted.png", alt:"Progress" %>
+      <div class="carousel-caption">
+          <h3>Track Progress</h3>
+      </div>
+    </div>
+  </div>
