@@ -46,7 +46,8 @@
 
   <ul class="nav navbar-nav">
                 <li class="active"></li>
-                <li><a href="#workouts"><%= link_to "Sign-In", user_workouts_path(current_user.id, @workouts), class: "fa fa-sign-in fa-4x" %></a></li>
-                <li><a href="#meals"><%= link_to "Register", user_meals_path(current_user.id, @meals), class: "fa fa-cutlery fa-4x" %></a></li>
+                <li><a href="#workouts"><%= link_to "Sign-In", user_workouts_path(current_user.id, @workouts), class: "fa fa-sign-in fa-3x" %></a></li>
+                <li><a href="#meals"><%= link_to "Register", user_meals_path(current_user.id, @meals), class: "fa fa-cutlery fa-3x" %></a></li>
+                <li><a href="#meals"><%= link_to "About", user_meals_path(current_user.id, @meals), class: "fa fa-info-circle fa-3x" %></a></li>
 
   </ul>
