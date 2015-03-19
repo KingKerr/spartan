@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks'}
   resources :users do
     resources :meals do
@@ -20,7 +21,7 @@ Rails.application.routes.draw do
 # get 'index'
 # post 'destory'
 
-  root 'users#index'
+  root 'landing#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
