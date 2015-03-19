@@ -5,7 +5,7 @@
   <h2>Meals</h2>
     <%= simple_form_for([current_user, @meal] ) do |f| %>
         <%= f.select :protein, @protein_options %>
-        <%= f.select :sides, @side  _options %>
+        <%= f.select :sides, @side_options %>
       <%= f.submit %>
     <% end %>
 </div>
