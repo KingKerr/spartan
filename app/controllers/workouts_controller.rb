@@ -14,7 +14,7 @@ class WorkoutsController < ApplicationController
 
   def create
     @workouts = Workout.new(workout_params)
-    if @workout.save
+    if @workouts.save
       redirect_to user_workouts_path(current_user.id)
     else
       format.html { render :new }
@@ -24,18 +24,18 @@ class WorkoutsController < ApplicationController
 
   def update
     respond_to do |format|
-      if @workout.update(workout_params)
-        format.html { redirect_to @workout, notice: 'Workout was successfully updated.'}
-        format.json { render :show, status: :ok, location: @workout }
+      if @workouts.update(workout_params)
+        format.html { redirect_to @workouts, notice: 'Workout was successfully updated.'}
+        format.json { render :show, status: :ok, location: @workouts }
       else
         format.html { render :edit }
-        format.json { render json: @workout.errors, status: :unprocessable_entity}
+        format.json { render json: @workouts.errors, status: :unprocessable_entity}
       end
     end
   end
 
   def destroy
-    @workout.destroy
+    @workouts.destroy
     respond_to do |format|
       format.html { redirect_to workouts_url, notice: 'Workout was successfully destroyed.'}
       format.json { head :no_content }

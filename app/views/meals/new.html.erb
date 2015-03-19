@@ -1,20 +1,11 @@
 <nav class="navbar navbar-inverse">
   <h1>Meals</h1>
 </nav>
-<div class="col-md-6">
-  <h2>Protein</h2>
-    <% simple_form_for([current_user, @meal] ) do |f| %>
-    <%= f.select :name, @protein_options %>
-    <% hidden_field :type, "protein" %>
-    <% f.submit %>
+<div class="col-md-3">
+  <h2>Meals</h2>
+    <%= simple_form_for([current_user, @meal] ) do |f| %>
+        <%= f.select :protein, @protein_options %>
+        <%= f.select :sides, @side  _options %>
+      <%= f.submit %>
     <% end %>
-</div>
-
-<div class="col-md-6">
-  <h2>Sides</h2>
-  <% simple_form_for([current_user, @meal] ) do |f| %>
-  <%= f.select :name, @side_options %>
-  <% hidden_field :type, "sides" %>
-  <% f.submit %>
-  <% end %>
 </div>

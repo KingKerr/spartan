@@ -14,7 +14,7 @@ class MealsController < ApplicationController
 
   def create
     @meals = Meal.new(meal_params)
-    if @meal.save
+    if @meals.save
       redirect_to user_meals_path(current_user.id)
     else
       format.html { render :new }
@@ -24,9 +24,9 @@ class MealsController < ApplicationController
 
   def update
     respond_to do |format|
-      if @meal.update(meal_params)
+      if @meals.update(meal_params)
         format.html { redirect_to @meal, notice: 'Meal was successfully updated.'}
-        format.json { render :show, status: :ok, location: @meal }
+        format.json { render :show, status: :ok, location: @meals }
       else
         format.html { render :edit }
         format.json { render json: @meal.errors, status: :unprocessable_entity}
