@@ -2,26 +2,12 @@
   <h1>Workouts</h1>
 </nav>
 <div class="col-md-3">
-  <h2>Cardio</h2>
-    <% simple_form_for([current_user, @workout] ) do |f| %>
-    <%= f.select :name, @cardio_options %>
-    <% hidden_field :type, "cardio" %>
-    <% f.submit %>
+  <h2>Workouts</h2>
+    <%= simple_form_for([current_user, @workout] ) do |f| %>
+        <%= f.select :cardio, @cardio_options %>
+        <%= f.select :upper_body, @upper_body_options %>
+        <%= f.select :lower_body, @lower_body_options %>
+      <% f.submit %>
     <% end %>
 </div>
-<div class="col-md-3">
-  <h2>Upper Body</h2>
-  <% simple_form_for([current_user, @workout] ) do |f| %>
-  <%= f.select :name, @upper_body_options %>
-  <% hidden_field :type, "upper_body" %>
-  <% f.submit %>
-  <% end %>
-</div>
-<div class="col-md-3">
-  <h2>Lower Body</h2>
-  <% simple_form_for([current_user, @workout] ) do |f| %>
-  <%= f.select :name, @lower_body_options %>
-  <% hidden_field :type, "lower_body" %>
-  <% f.submit %>
-  <% end %>
-</div>
+

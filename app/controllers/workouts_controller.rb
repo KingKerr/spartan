@@ -3,7 +3,6 @@ class WorkoutsController < ApplicationController
   def index
     @workouts = Workout.all
     user_id = current_user.id
-
   end
 
   def new
