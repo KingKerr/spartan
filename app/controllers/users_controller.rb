@@ -8,6 +8,17 @@ class UsersController < ApplicationController
 
   def spotify
     spotify_user = RSpotify::User.new(request.env['omniauth.auth'])
+
+    spotify_user.country
+    spotify_user.email
+
+    #Creating a playlist
+    playlist = spotify_user.create_playlist!('')
+
+    spotify_user.follow(playlist)
+
+    tracks = RSpotify::Track.search('')
+    playlist.add_tracks!(tracks)
   end
 
   def show
