@@ -1,33 +1,23 @@
-<div class="login">
+<div class="login-container">
+
   <nav class="nav navbar-inverse">
-    <div class="registration_header"><h1>Spartan</h1></div>
+    <h1>Spartan</h1>
   </nav>
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
-  <div class="col-md-6 col-md-offset-3"
-    <div class="form-inputs">
       <%= f.input :email, required: true, autofocus: true, class: "btn btn-info" %>
       <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable), class: "btn btn-info" %>
       <%= f.input :password_confirmation, required: true , class: "btn-info" %>
-    </div>
-  <div class="col-md-6">
-    <div class="form-actions">
-      <div class="btn-group">
-      <%= f.button :submit, "Register", class: "fa fa-sign-in fa-2x btn btn-info" %>
-      </div>
 
-      <div class="btn-group">
-        <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), class: "btn btn block btn-social btn-facebook fa fa-facebook-square fa-2x" %>
-      </div>
-      <div class="btn-group">
-        <%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2), class: "btn btn-block btn-social btn-google-plus fa fa-google fa-2x" %>
-      </div>
-      <div class="btn-group">
-        <%= link_to "Sign in with Spotify", user_omniauth_authorize_path(:spotify), class: "btn btn-block btn-social btn-spotify fa fa-spotify fa-2x" %>
-      </div>
-    </div>
-  </div>
-  </div>
+      <%= f.button :submit, "Register", class: "fa fa-sign-in fa-2x btn btn-info" %>
+
+
+      <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), class: "btn btn block btn-social btn-facebook fa fa-facebook-square fa-2x" %>
+
+      <%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2), class: "btn btn-block btn-social btn-google-plus fa fa-google fa-2x" %>
+
+      <%= link_to "Sign in with Spotify", user_omniauth_authorize_path(:spotify), class: "btn btn-block btn-social btn-spotify fa fa-spotify fa-2x" %>
+
   <% end %>
 
 
