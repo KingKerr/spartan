@@ -2,6 +2,11 @@
 @import 'bootstrap';
 @import 'bootstrap-social';
 
+.carousel-inner {
+margin-left: auto;
+margin-right: auto;
+width: 1200px;
+}
 body {
   width: 100%;
   height: 100%;
@@ -64,6 +69,7 @@ h3 {
 }
 
 .login-container {
-  background-image: url(http://www.crossfit.com/mt-archive2/RachelMulhernGames2010OrlandoRopeUseYourFeet.jpg); /* Find URL */
+  background-image: url(http://2.bp.blogspot.com/-0-xdsR2bGCU/UB5otPOmcNI/AAAAAAAABBU/MFTQLdwNKhI/s1600/Do+Or+Die.jpeg); /* Find URL */
   height: 600px;
+  width: 1290px;
 }
