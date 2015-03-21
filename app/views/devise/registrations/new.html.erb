@@ -7,9 +7,9 @@
       <%= f.input :email, required: true, autofocus: true, class: "btn btn-info" %>
       <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable), class: "btn btn-info" %>
       <%= f.input :password_confirmation, required: true , class: "btn-info" %>
-
+    <div class="signin-submit">
       <%= f.button :submit, "Register", class: "fa fa-sign-in fa-2x btn btn-info" %>
-
+    </div>
     <div class="oauth-buttons">
       <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), class: "btn btn block btn-social btn-facebook fa fa-facebook-square fa-2x" %>
 
