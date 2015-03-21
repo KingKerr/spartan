@@ -1,8 +1,7 @@
 <div class="login-container">
+</div>
 
-  <nav class="nav navbar-inverse">
-    <h1>Spartan</h1>
-  </nav>
+<div class="registration">
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
       <%= f.input :email, required: true, autofocus: true, class: "btn btn-info" %>
@@ -18,7 +17,7 @@
 
       <%= link_to "Sign in with Spotify", user_omniauth_authorize_path(:spotify), class: "btn btn-block btn-social btn-spotify fa fa-spotify fa-2x" %>
 
-  <% end %>
-
-
+    <% end %>
 </div>
+
+
