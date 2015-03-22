@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse">
   <h1>Workouts</h1>
 </nav>
-<div class="col-md-3">
+<div class="workout-selector">
   <h2>Workouts</h2>
     <%= simple_form_for([current_user, @workout] ) do |f| %>
         <%= f.select :cardio, @cardio_options %>

@@ -11,7 +11,8 @@ class UsersController < ApplicationController
 
     spotify_user.country
     spotify_user.email
-
+    #Searching for Artists
+    artists = RSpotify::Artist.search('')
     #Creating a playlist
     playlist = spotify_user.create_playlist!('')
 
