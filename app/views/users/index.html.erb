@@ -28,33 +28,31 @@
         </div>
       </div>
     </div>
-
-
-
-
-
     </div>
 
-    <div class="container feature">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="btn btn-info">
-            <h3>Fitness Logs</h3>
-          </div>
-        </div>
-         <div class="col-lg-4">
-          <div class="btn btn-info">
-            <h3>Nutrition logs</h3>
-          </div>
-         </div>
-         <div class="col-lg-4">
-          <div class="btn btn-info">
-            <h3>Social</h3>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="user-dash-image">
 
+  </div>
 
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="icon-container">
+      <ul class="footer-icons">
+        <li><a href="workout-icon">
+          <%= link_to "", user_workouts_path(current_user.id, @workouts), class: "fa fa-bicycle fa-5x" %></a>
+          <p>Plan Your Workout</p>
+        </li>
+        <li><a href="meal-icon">
+          <%= link_to "", user_meals_path(current_user.id, @meals), class: "fa fa-cutlery fa-5x" %></a>
+          <p>Plan Your Meal</p>
+        </li>
 
+        <li><a href="music-icon">
+          <%= link_to "", users_path(current_user.id), class: "fa fa-headphones fa-5x" %></a>
+          <p>Music Playlist</p>
+        </li>
 
+        <li><a href="sign-out-icon">
+          <%= link_to "", destroy_user_session_path, method: :delete, class: "fa fa-sign-out fa-5x" %></a>
+        </li>
+      </ul>
+  </div>

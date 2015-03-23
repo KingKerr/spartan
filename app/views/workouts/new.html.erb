@@ -1,6 +1,32 @@
-<nav class="navbar navbar-inverse">
-  <h1>Workouts</h1>
-</nav>
+<div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><h3>Spartan</h3></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <div class="right-inner-addon pull-right">
+
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"></li>
+                <li><a href="#workouts"><%= link_to "", user_workouts_path(current_user.id, @workouts), class: "fa fa-bicycle fa-2x" %></a></li>
+                <li><a href="#meals"><%= link_to "", user_meals_path(current_user.id, @meals), class: "fa fa-cutlery fa-2x" %></a></li>
+                <li><a href="#playlist"><%= link_to '', users_path(current_user.id), class: "fa fa-headphones fa-2x" %></a></li>
+                <li><a href="signout"><%= link_to '', destroy_user_session_path, method: :delete, class: "fa fa-sign-out fa-2x" %></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 <div class="workout-selector">
   <h2>Workouts</h2>
     <%= simple_form_for([current_user, @workout] ) do |f| %>

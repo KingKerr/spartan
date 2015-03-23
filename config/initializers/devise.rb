@@ -2,9 +2,9 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
 
-  config.omniauth :facebook, "FB_KEY", "FB_SECRET"
-  config.omniauth :spotify, "SPOTIFY_ID", "SPOTIFY_KEY"
-  config.omniauth :google_oauth2, "GOOGLE_ID", "GOOGLE_SECRET"
+  config.omniauth :facebook, ENV["FB_KEY"], ENV["FB_SECRET"], provider_ignores_state: true
+  config.omniauth :spotify, ENV["SPOTIFY_ID"], ENV["SPOTIFY_KEY"], provider_ignores_state: true
+  config.omniauth :google_oauth2, ENV["GOOGLE_ID"], ENV["GOOGLE_SECRET"]
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
