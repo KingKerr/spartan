@@ -30,29 +30,29 @@
     </div>
     </div>
 
-  <div class="user-dash-image">
 
-  </div>
 
-  <div class="navbar navbar-default navbar-fixed-bottom">
-    <div class="icon-container">
-      <ul class="footer-icons">
-        <li><a href="workout-icon">
-          <%= link_to "", user_workouts_path(current_user.id, @workouts), class: "fa fa-bicycle fa-5x" %></a>
-          <p>Plan Your Workout</p>
-        </li>
-        <li><a href="meal-icon">
-          <%= link_to "", user_meals_path(current_user.id, @meals), class: "fa fa-cutlery fa-5x" %></a>
-          <p>Plan Your Meal</p>
-        </li>
-
-        <li><a href="music-icon">
-          <%= link_to "", users_path(current_user.id), class: "fa fa-headphones fa-5x" %></a>
-          <p>Music Playlist</p>
-        </li>
-
-        <li><a href="sign-out-icon">
-          <%= link_to "", destroy_user_session_path, method: :delete, class: "fa fa-sign-out fa-5x" %></a>
-        </li>
-      </ul>
+<div class="col-md-4">
+  <li><a href="workout-icon">
+    <%= link_to "", new_user_workout_path(current_user.id, @workouts), class: "fa fa-bicycle fa-5x" %></a>
+      <p>Plan Your Workout</p>
+  </li>
+<div class="col-md-4">
+  <li><a href="meal-icon">
+    <%= link_to "", new_user_meal_path(current_user.id, @meals), class: "fa fa-cutlery fa-5x" %></a>
+      <p>Plan Your Meal</p>
+  </li>
+</div>
+<div class="col-md-4">
+  <li><a href="music-icon">
+    <%= link_to "", users_path(current_user.id), class: "fa fa-headphones fa-5x" %></a>
+      <p>Music Playlist</p>
+      <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A444P4wvSDa0SD5HE4YGx9B" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+  </li>
+</div>
+<div class="col-md-4">
+  <li><a href="sign-out-icon">
+    <%= link_to "", destroy_user_session_path, method: :delete, class: "fa fa-sign-out fa-5x" %></a>
+  </li>
+</div>
   </div>

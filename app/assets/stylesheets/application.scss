@@ -10,24 +10,13 @@
 
 }
 
-.icon-container {
-  background-color: #121314;
-  width: 1100px;
-  height: 450px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .meal-icon {
   background-color: #121314;
   width: 145px;
   height: 80px;
 
-}
-.user-dash-image {
-  background-image: url();
-  width: 1100px;
-  height: 450px;
 }
 .music-icon {
   background-color: #F8F8F8;
@@ -63,24 +52,6 @@ h1 {
   color: #000;
 }
 
-.compass {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 500px;
-  height: 500px;
-  min-width: 320px;
-  max-width: 600px;
-  transform: translate(-50%, -50%)translateZ(0);
-}
-.orbiter {
-  position: absolute;
-  width: 15%;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  margin: -7.5%;
-}
 
 .registration_header {
   background-color: #F8F8F8;
