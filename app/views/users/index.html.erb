@@ -1,7 +1,7 @@
 
     <div class="navbar-wrapper">
       <div class="container">
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -29,15 +29,17 @@
 
 
 
-<div class="col-md-4">
-  <li><a href="workout-icon">
+<div id="user-selections">
+  <a href="workout-icon" class="user-workouts" alt="User selects workouts">
     <%= link_to "", new_user_workout_path(current_user.id, @workouts), class: "fa fa-bicycle fa-5x" %></a>
-      <p>Plan Your Workout</p>
-  </li>
-<div class="col-md-4">
-  <li><a href="meal-icon">
+      <h3>Plan Your Workout</h3>
+        <h4>Choose an exercise for upper body, lower body and cardio from our suggestions.</h4>
+
+
+  <a href="meal-icon">
     <%= link_to "", new_user_meal_path(current_user.id, @meals), class: "fa fa-cutlery fa-5x" %></a>
-      <p>Plan Your Meal</p>
+      <h3>Plan Your Meal</h3>
+        <h4>We have a selection of proteins and sides to help fuel you for your day.</h4>
   </li>
 </div>
 <div class="player1">
