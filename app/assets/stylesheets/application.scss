@@ -2,7 +2,9 @@
 @import 'bootstrap';
 @import 'bootstrap-social';
 /*@import 'users';*/
+.player2 {
 
+}
 .workout-icon {
   background-color: #F8F8F8;
   width: 145px;
@@ -10,7 +12,11 @@
 
 }
 
-
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-color: #F8F8F8;
+}
 
 .meal-icon {
   background-color: #121314;
