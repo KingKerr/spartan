@@ -176,7 +176,14 @@ h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 375;
 }
-
+.features {
+  max-width: 1200px;
+  margin: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: hidden;
+  text-align: center;
+}
 .navbar-header {
   margin: auto;
   text-align: center;
