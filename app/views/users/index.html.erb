@@ -1,46 +1,52 @@
-
-    <div class="navbar-wrapper">
-      <div class="container">
-        <div class="navbar navbar-default navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><h1 class="title">Spartan</h1></a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <div class="right-inner-addon pull-right">
-
-              </div>
-              <ul class="nav navbar-nav">
-                <li class="active"></li>
-                <li><a href="signout"><%= link_to '', destroy_user_session_path, method: :delete, class: "fa fa-sign-out fa-2x" %></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+<header class="wrapper-header" style="width: auto; position: relative;">
+  <div class="wrapper-header-inner">
+    <a class="logo" href="" title="Go to Homepage">
+    </a>
+    <div class="menu">
+      <ul class="menu-links">
+        <li class="social-link">
+          <span class="menu-item">Social</span>
+        </li>
+        <li class="training-link">
+          <span class="menu-item2">Train</span>
+        </li>
+        <li class="nutrition-link">
+          <span class="menu-item3">Nutrition</span>
+        </li>
+        <li class="wellness-link">
+          <span class="menu-item4">Wellness</span>
+        </li>
+        <li class="signout-link">
+          <span class="menu-item5"><%= link_to '', destroy_user_session_path, method: :delete, class: "fa fa-sign-out fa-2x" %></span>
+        </li>
+      </ul>
     </div>
+  </div>
+</header>
+<div class="header-container" style="width: auto; position: relative; margin-top: auto;">
+  <div class="adaptive-container">
+    <h1>Spartan. Embark on your journey.</h1>
+  </div>
+</div>
+
+
+<div id="user-container">
+  <div id="user-content">
+    <div id="user-selections">
+      <a href="workout-icon" class="user-workouts" alt="User selects workouts">
+        <img src="" alt>
+          <%= link_to "", new_user_workout_path(current_user.id, @workouts), class: "fa fa-bicycle fa-5x" %></a>
+            <h3>Plan Your Workout</h3>
+              <p>Choose an exercise for upper body, lower body and cardio from our suggestions.</p>
+
+
+      <a href="meal-icon">
+        <img src="" alt>
+          <%= link_to "", new_user_meal_path(current_user.id, @meals), class: "fa fa-cutlery fa-5x" %></a>
+            <h3>Plan Your Meal</h3>
+              <p>We have a selection of proteins and sides to help fuel you for your day.</p>
     </div>
-
-
-
-<div id="user-selections">
-  <a href="workout-icon" class="user-workouts" alt="User selects workouts">
-    <%= link_to "", new_user_workout_path(current_user.id, @workouts), class: "fa fa-bicycle fa-5x" %></a>
-      <h3>Plan Your Workout</h3>
-        <h4>Choose an exercise for upper body, lower body and cardio from our suggestions.</h4>
-
-
-  <a href="meal-icon">
-    <%= link_to "", new_user_meal_path(current_user.id, @meals), class: "fa fa-cutlery fa-5x" %></a>
-      <h3>Plan Your Meal</h3>
-        <h4>We have a selection of proteins and sides to help fuel you for your day.</h4>
-  </li>
+  </div>
 </div>
 <div class="player1">
   <iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A2lkQd5T32QHDOfFkEIPJKz" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>

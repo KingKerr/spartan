@@ -10,7 +10,64 @@
   margin-right: auto;
   float: right;
 }
+.span.menu-item {
+  display: inline;
+}
+.header-container {
+  height: 107px;
+  background: #F8F8F8;
+}
+.wrapper-header.logo {
+  display: inline-block;
+  line-height: 60px;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 123px;
+  vertical-align: top;
+  margin-right: 20px;
+  position: relative;
+}
+.menu-links ul li {
+  display: block;
+  float: left;
 
+}
+.adaptive-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+}
+ul.menu-links {
+  display: inline-block;
+  width: 440px;
+  height: 60px;
+}
+.wrapper-header {
+  width: auto;
+  position: relative;
+  height: 60px;
+  z-index: 1;
+}
+.wrapper-header-inner {
+  max-width: 960px;
+  max-height: 64px;
+  margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+#user-container {
+  width: 100%;
+  position: relative;
+}
+#user-content {
+  display: block;
+  padding-top: 1px;
+  margin-top: -1px;
+}
 #user-selections {
   margin-top: 20px;
   padding-bottom: 100px;
