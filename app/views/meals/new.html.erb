@@ -26,11 +26,15 @@
         </div>
       </div>
     </div>
-<div class="col-md-3">
+<div class="meal-selector">
   <h2>Meals</h2>
-    <%= simple_form_for([current_user, @meal] ) do |f| %>
+    <div id="form-group">
+      <%= simple_form_for([current_user, @meal] ) do |f| %>
+    </div>
+      <div class="form-inputs">
         <%= f.select :protein, @protein_options %>
         <%= f.select :sides, @side_options %>
+      </div>
       <%= f.submit %>
     <% end %>
 </div>

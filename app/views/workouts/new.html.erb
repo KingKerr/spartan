@@ -31,6 +31,7 @@
   <h2>Workouts</h2>
     <div id="form-group">
       <%= simple_form_for([current_user, @workout] ) do |f| %>
+    </div>
       <div class="form-inputs">
         <%= f.select :cardio, @cardio_options %>
         <%= f.select :upper_body, @upper_body_options %>
