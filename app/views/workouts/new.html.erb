@@ -19,7 +19,7 @@
               <ul class="nav navbar-nav">
                 <li class="active"></li>
                 <li><a href="#workouts"><%= link_to "", user_workouts_path(current_user.id, @workouts), class: "fa fa-bicycle fa-2x" %></a></li>
-                <li><a href="#meals"><%= link_to "", user_meals_path(current_user.id, @meals), class: "fa fa-cutlery fa-2x" %></a></li>
+                <li><a href="#meals"><%= link_to "", new_user_meal_path(current_user.id, @meals), class: "fa fa-cutlery fa-2x" %></a></li>
                 <li><a href="signout"><%= link_to '', destroy_user_session_path, method: :delete, class: "fa fa-sign-out fa-2x" %></a></li>
               </ul>
             </div>
