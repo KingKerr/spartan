@@ -8,7 +8,7 @@ class MealsController < ApplicationController
 
   def new
     @meal = Meal.new
-    @protein_options = ["Chicken", "Grass-fed Beef", "Shrimp", "Fish", "Beans", "Pork"]
+    @protein_options = ["Chicken", "Grass-fed Beef", "Shrimp", "Fish", "Beans", "Turkey"]
     @side_options = ["Brown Rice", "Salad", "Pasta", "Potatoes"]
   end
 
