@@ -1,2 +1,4 @@
 Spartan
 A social fitness app built with Ruby on Rails.
+Postgres is used along with styling by Bootstrap.
+MVP version.
