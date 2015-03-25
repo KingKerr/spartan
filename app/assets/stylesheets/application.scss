@@ -179,7 +179,16 @@ h3 {
 .features {
   background: #ADDDDB;
 }
-.features {
+.workout-features {
+  max-width: 1200px;
+  margin: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: hidden;
+  text-align: center;
+}
+
+.meal-features {
   max-width: 1200px;
   margin: auto;
   margin-right: auto;
