@@ -1,6 +1,32 @@
-<nav class="navbar navbar-inverse">
+<div class="container">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#homepage"><h2>Spartan</h2></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <div class="right-inner-addon pull-right">
+
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"></li>
+                <li><a href="#workouts"><%= link_to "", new_user_workout_path(current_user.id, @workouts), class: "fa fa-bicycle fa-2x" %></a></li>
+                <li><a href="#meals"><%= link_to "", new_user_meal_path(current_user.id, @meals), class: "fa fa-cutlery fa-2x" %></a></li>
+                <li><a href="signout"><%= link_to '', destroy_user_session_path, method: :delete, class: "fa fa-sign-out fa-2x" %></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   <h1>List of Workouts</h1>
-</nav>
+
 <div class="col-md-4">
   <h2>Upper Body</h2>
     <button type="button" class="btn btn-info btn-lg btn-block active"><h3>Pull Ups</h3>
