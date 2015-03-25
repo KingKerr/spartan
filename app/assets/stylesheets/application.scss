@@ -15,7 +15,7 @@
 }
 .header-container {
   height: 107px;
-  background: #F8F8F8;
+  background: #121314;
 }
 .wrapper-header.logo {
   display: inline-block;
@@ -49,6 +49,7 @@ ul.menu-links {
   position: relative;
   height: 60px;
   z-index: 1;
+  background: #121314;
 }
 .wrapper-header-inner {
   max-width: 960px;
@@ -73,7 +74,10 @@ ul.menu-links {
   padding-bottom: 100px;
   text-align: center;
 }
-
+a.user-workouts {
+  width: 460px;
+  height: 200px;
+}
 #user-selections.user-workouts {
   display: inline-block;
   vertical-align: top;
@@ -146,9 +150,11 @@ h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   text-align: center;
-  color: #000;
+  color: #F8F8F8;
 }
-
+.top-header {
+  background: #121314;
+}
 
 .registration_header {
   background-color: #F8F8F8;

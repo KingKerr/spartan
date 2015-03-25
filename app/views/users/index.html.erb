@@ -1,34 +1,40 @@
-<header class="wrapper-header" style="width: auto; position: relative;">
-  <div class="wrapper-header-inner">
-    <a class="logo" href="" title="Go to Homepage">
-    </a>
-    <div class="menu">
-      <ul class="menu-links">
-        <li class="social-link">
-          <span class="menu-item">Social</span>
-        </li>
-        <li class="training-link">
-          <span class="menu-item2">Train</span>
-        </li>
-        <li class="nutrition-link">
-          <span class="menu-item3">Nutrition</span>
-        </li>
-        <li class="wellness-link">
-          <span class="menu-item4">Wellness</span>
-        </li>
-        <li class="signout-link">
-          <span class="menu-item5"><%= link_to '', destroy_user_session_path, method: :delete, class: "fa fa-sign-out fa-2x" %></span>
-        </li>
-      </ul>
+<div class="top-header">
+  <header class="wrapper-header" style="width: auto; position: relative;" role="navigation">
+    <div class="wrapper-header-inner">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <a class="logo" href="" title="Go to Homepage">
+        </a>
+      </button>
+      <div class="menu">
+        <ul class="menu-links">
+
+          <span class="menu-item"></span>
+
+          <span class="menu-item2"></span>
+
+
+          <span class="menu-item3"></span>
+
+
+          <span class="menu-item4"></span>
+
+          <li class="signout-link">
+            <span class="menu-item5"><%= link_to '', destroy_user_session_path, method: :delete, class: "fa fa-sign-out fa-2x" %></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="header-container" style="width: auto; position: relative; margin-top: auto;">
+    <div class="adaptive-container">
+      <h1>Spartan. Embark on your journey.</h1>
     </div>
   </div>
-</header>
-<div class="header-container" style="width: auto; position: relative; margin-top: auto;">
-  <div class="adaptive-container">
-    <h1>Spartan. Embark on your journey.</h1>
-  </div>
 </div>
-
 
 <div id="user-container">
   <div id="user-content">
